@@ -30,8 +30,13 @@
     <script>
         window.onload = function() {
             var nav = document.querySelectorAll('.nav>li');
-            nav.onmouseover = function() {
-                this.style.backgroundColor = '#fff'
+            for (var i = 0; i < nav.length; i++) {
+                nav[i].onmouseover = function() {
+                    this.style.background = '#ccc'
+                }
+                nav[i].onmouseout = function() {
+                    this.style.background = '#bbb'
+                }
             }
         }
     </script>
