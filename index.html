@@ -12,8 +12,29 @@
 <body>
     <header>
         <div class="title"><img src="img/head.jpg" alt=""></div>
-        <ul></ul>
+        <ul class="nav">
+            <li>
+                <a href="">个人信息</a>
+            </li>
+            <li>
+                <a href="">成果展示</a>
+            </li>
+            <li>
+                <a href="">留言板</a>
+            </li>
+            <li>
+                <a href="">联系方式</a>
+            </li>
+        </ul>
     </header>
+    <script>
+        window.onload = function() {
+            var nav = document.querySelectorAll('.nav>li');
+            nav.onmouseover = function() {
+                this.style.backgroundColor = '#fff'
+            }
+        }
+    </script>
 </body>
 
 </html>
