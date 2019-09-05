@@ -19,7 +19,7 @@ $(function() {
     for (var i = 0; i < $('.nav>li').length; i++) {
         $('.nav>li').eq(i).mouseover(function() {
             $(this).css({
-                backgroundColor: '#aaa',
+                backgroundColor: 'rgb(150,150,150)',
             });
         })
         $('.nav>li').eq(i).mouseout(function() {
