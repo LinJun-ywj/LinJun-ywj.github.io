@@ -2,11 +2,19 @@ $(function() {
     //换肤效果
     $('.theme ul li').eq(0).click(function() {
         $('html,body').css('background-color', '#fff')
+    }).mouseover(function() {
+        $(this).css('transform', 'scale(1.1)')
+    }).mouseout(function() {
+        $(this).css('transform', 'scale(1)')
     });
     $('.theme ul li').eq(1).click(function() {
-            $('html,body').css('background-color', '#aaa')
-        })
-        //header部分导航栏
+        $('html,body').css('background-color', '#aaa')
+    }).mouseover(function() {
+        $(this).css('transform', 'scale(1.1)')
+    }).mouseout(function() {
+        $(this).css('transform', 'scale(1)')
+    });;
+    //header部分导航栏
     $('.title>img').fadeIn(1000)
     for (var i = 0; i < $('.nav>li').length; i++) {
         $('.nav>li').eq(i).mouseover(function() {
@@ -24,14 +32,12 @@ $(function() {
     $('.msg').fadeIn(1500)
     $('.msg').mouseover(function() {
         $(this).css({
-            transform: 'translate(-2px,-2px)',
-            boxShadow: '5px 5px 5px #aaa'
-        })
+            transform: 'scale(1.05)'
+        }).children('.ul1').css('visibility', 'visible')
     })
     $('.msg').mouseout(function() {
         $(this).css({
-            transform: 'translate(2px,2px)',
-            boxShadow: 'none'
-        })
+            transform: 'scale(1)'
+        }).children('.ul1').css('visibility', 'hidden')
     })
 })
