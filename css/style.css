@@ -133,6 +133,10 @@ article {
     position: relative;
 }
 
+.msg .ul1 {
+    visibility: hidden;
+}
+
 .msg .ul1 li {
     margin: 5px 0 5px 1em;
     ;
